@@ -31,7 +31,7 @@ body{
   margin:0;
   font-family: 'Source Sans Pro', sans-serif;
   color: red;
-  background-color:green;
+  background-color: #038C65;
 }
 h1,h2,h3,h4,h5,h6{
   font-family: 'Fjalla One',sans-serif;
@@ -45,12 +45,15 @@ h1{
   color:white
 }
 h2{
-  color:#1b2127;
+  color: white;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 40px;
+}
+h3 {
+color:#03CDDB;
 }
 h1 strong{
   color: #1b2127;
@@ -96,7 +99,7 @@ figure{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color:#1b2127;
+  background-color:#014029;
   color: white;
   height: 70px;
 }
@@ -107,7 +110,7 @@ figure{
 .footer{
   display: flex;
   color: white;
-  background-color: #1b2127;
+  background-color: #014029;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -126,7 +129,7 @@ figure{
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #f4fbff;
+  background-color: #F2D5A0;
 }
 .event img{
   width: 480px;
@@ -136,7 +139,7 @@ figure{
 .event-detail{
   margin:20px 40px;
   margin-top: -40px;
-  background-color: white;
+  background-color: whitesmoke;
   position: relative;
   padding: 20px;
   text-align: center;
@@ -149,7 +152,7 @@ figure{
   border: 1px solid;
   padding: 5px 20px;
   text-decoration: none;
-  color: #026fff;
+  color: #014029;
   border-radius: 5px;
 }
 .footer a{
