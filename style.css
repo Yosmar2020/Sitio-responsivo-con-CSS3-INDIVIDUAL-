@@ -80,7 +80,7 @@ figure{
 }
 .menu{
   height: inherit;
-  background-color: #014029ec;
+  background-color: #014029;
 }
 .menu ul{
   height: inherit;
@@ -235,7 +235,7 @@ figure{
   .menu{
     font-size: 0.5em; 
     position: fixed;
-    background-color: #a60321de;
+    background-color: #a60321;
     z-index: 1;
     top: 0;
     bottom: 0;
