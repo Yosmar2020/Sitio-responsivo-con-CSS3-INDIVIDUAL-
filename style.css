@@ -80,6 +80,7 @@ figure{
 }
 .menu{
   height: inherit;
+  background-color: #014029;
 }
 .menu ul{
   height: inherit;
@@ -87,7 +88,6 @@ figure{
   padding: 0;
   display: flex;
   list-style: none;
-  background-color: #014029;
 }
 .menu ul li{
   margin: 0 20px;
