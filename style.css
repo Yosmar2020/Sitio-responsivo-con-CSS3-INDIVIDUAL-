@@ -189,97 +189,165 @@ figure{
   color: white;
 }
 
-/*  responsive */
-/* crear una funcion para sobrescrivbir css*/
+/*Código para el sitio web responsivo*/
+
+/*Crear una función para sobrescribir css cuando el máximo ancho
+de un elemento es 1024px
+se utiliza la @media una regla para incluir un bloque de propiedades
+CSS solo si una determinada condición es verdadera.*/
 @media screen and (max-width: 1024px){
   .container{
+/*padding establece el espacio de relleno requerido por todos los lados de un elemento*/
+/*en este caso de la clase container*/
     padding: 0 1.5px;
   }
   .event-title{
+/*margin establece el margen para los cuatro lados de la clase event-title*/    
     margin: 10px;
   }
   .event-detail h3{
+/*font-size especifica la dimensión de la letra de la clse event-detail y el elemento h3*/
     font-size: 20 px;
   }
   .event-detail p{
+/*font-size especifica la dimensión de la letra de la clse event-detail y el elemento p (parrafo)*/
     font-size: 18 px;
   }
 } 
 
+/*Crear una función para sobrescribir css cuando el máximo ancho
+de un elemento es 768px(El que utilizaremos para pantallas pequeñas, como las de móviles)*/
 @media screen and (max-width: 768px){
   .burger-button{
+  /*display nos permite establecer el tipo de caja que el navegador empleará
+  hace que el comportamiento del elemento sea como un bloque
+  en este caso para el elemento burger-button*/
     display: block;
   }  
   h2{
+  /*Modifica el color del texto del elemento (h2) */
     color: #A60321;
   }
   h3 {
+   /*Modifica el color del texto del elemento (h3) */
     color: #A60321;
     }
     .header{
+    /*Modifica el color del fondo en la clase header*/   
       background-color:  #1C2526;
+    /*Modifica el color del texto en la clase header*/
       color: whitesmoke;
+    /*Especifica la altura del area de contenido de un elemento*/
       height: 70px;
     }
   body{
+     /*Modifica el color del texto en la clase body*/
     color: #590212;
+    /*Modifica el color del fondo en la clase body*/   
     background-color: #94E9F2;
   }
   .event{
+  /*Modifica el color del fondo en la clase event*/ 
     background-color: #590212;
   }
   .footer{
+  /*Modifica el color del texto en la clase footer*/
     color: white;
+  /*Modifica el color del fondo en la clase footer*/ 
     background-color: #1C2526;
   }
   .menu{
+  /*font-size especifica la dimensión de la letra de la clse menu*/
     font-size: 0.5em; 
+  /*position de CSS especifica cómo un elemento es posicionado en el documento
+  elemento posicionado absolutamente es un elemento cuyo valor
+  computado de  position es absolute o fixed*/
     position: fixed;
+  /*Modifica el color del fondo en la clase menu*/ 
     background-color:rgba(166, 3, 33, .5);
+  /*z-index indica el orden de un elemento posicionado y sus descendientes*/
     z-index: 1;
+  /*permite desplazar un elemento respecto a su posición original 
+  tomando como referencia el borde superior del elemento*/
     top: 0;
+  /*bottom permite desplazar un elemento respecto a su posición 
+  original tomando como referencia el borde inferior del elemento.*/
     bottom: 0;
+  /*left permite desplazar un elemento respecto a su posición 
+  original tomando como referencia el borde izquierdo del elemento*/
     left: -100vw;
+  /*width especifica la anchura del area de contenido de un elemento*/
     width: 50%;
+  /*height especifica la altura del area de contenido de un elemento.*/
     height: 100%;
+  /* permite  acomodarse a diferentes tamaños de pantalla y diferentes dispositivos*/
     display: flex;
+  /* Cambia el tamaño del contenedor o elemento anidado y el elemento anidado 
+  siempre permanece centrado.*/
     align-items: center;
+  /*justify-content para alinear el elemento en el eje principal*/
     justify-content: center;
+  /*Permite definir la transición entre dos estados de un elemento. */ 
     transition: .3s;
   }
+  /*Representa un elemento (como un botón) que el usuario está activando. */
   .menu.is-active{
+  /*left especifica parte de la posición de un elemento*/
     left: 0;
   }
   .header{
+    /*display nos permite establecer el tipo de caja que el navegador empleará
+  hace que el comportamiento del elemento sea como un bloque*/
     display: block;
+  /*height: auto; el elemento ajustará automáticamente su altura para permitir que su contenido 
+  se muestre correctamente. */
     height: auto;
   }
   .header ul {
+  /*initial es un valor permitido en todas las propiedades CSS.
+  Fuerza la utilización del valor inicial de la propiedad para el elemento al cual se aplica.*/ 
     display: initial;
   }
   .header ul li{
+   /*Especifica la altura del area de contenido de un elemento*/
     height: 50px;
+   /*justify-content para alinear el elemento en el eje principal*/
     justify-content: center;
   }
   .header{
+    /*Especifica la altura del area de contenido de un elemento*/
     height: 50px;
+     /*justify-content para alinear el elemento en el eje principal*/
     justify-content: center;
   }
   .header a{
+     /*justify-content para alinear el elemento en el eje principal*/
     justify-content: center;
+    /*Especifica la altura del area de contenido de un elemento*/
     height: 40 px;
+    /*font-size especifica la dimensión de la letra*/
     font-size: 1.5em;
+    /*se usa para establecer el formato de texto a subrayado ( underline )*/
     text-decoration: underline;
+    /*margin-bottom 
+    es la propiedad de un elemento que establece el espacio requerido en la parte inferior de un elemento.*/
     margin-bottom: .5px;
   }
   .header .logo{
+    /* text-align define cuatro valores para alinear los contenidos a la derecha ( right )
+    en este caso para mover el logo cuando el menú desplegable aparezca*/
     text-align: right;
   }
   .event{
+  /*width: auto; el elemento ajustará automáticamente su anchura para permitir que su contenido 
+  se muestre correctamente. */
     width: auto;
+  /* flex-shrink especifica el factor de contracción de un flex item.
+  Los flex items se encogerán para llenar el contenedor de acuerdo a su número*/ 
     flex-shrink: initial;
   }
   .event img{
+  /*width especifica la anchura del area de contenido de un elemento*/
     width: 100%;
   }
 }
@@ -287,20 +355,30 @@ figure{
 
 @media screen and (max-width: 425px){
   .event-detail h3{
+    /*font-size especifica la dimensión de la letra */
     font-size: 15px;
   }
   .event-detail p{
+    /*font-size especifica la dimensión de la letra */
     font-size: 13px;
   }
   .menu{
+    /*width especifica la anchura del area de contenido de un elemento. */
     width: 90vw;
   }
   .event-detail a{
+    /*padding establece el espacio de relleno requerido por todos los lados de un elemento*/
     padding: 5px 40px;
   }
   .footer{
+  /*display nos permite establecer el tipo de caja que el navegador empleará
+  hace que el comportamiento del elemento sea como un bloque
+  en este caso para el elemento burger-button*/
     display: block;
+  /*controla la alineación de los elementos*/  
     text-align: center;
+  /*Establece algunas o todas las propiedades de todos los bordes de los elementos*/
     border: 1px solid transparent;
+
   }
 }
