@@ -246,12 +246,6 @@ figure{
     justify-content: center;
     transition: .3s;
   }
-  .menu ul{
-    background-color: #a60321de;
-  }
-  .menu ul li{
-    background-color: #a60321de;
-  }
   .menu.is-active{
     left: 0;
   }
