@@ -235,7 +235,7 @@ figure{
   .menu{
     font-size: 0.5em; 
     position: fixed;
-    background-color: #a60321;
+    background-color:rgba(166, 3, 33, .5);
     z-index: 1;
     top: 0;
     bottom: 0;
