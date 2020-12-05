@@ -234,7 +234,7 @@ figure{
   .menu{
     font-size: 0.5em; 
     position: fixed;
-    background: #a60321de;
+    background-color: #a60321de;
     z-index: 1;
     top: 0;
     bottom: 0;
