@@ -187,3 +187,119 @@ figure{
   top: 5px;
   color: white;
 }
+
+/*  responsive */
+/* crear una funcion para sobrescrivbir css*/
+@media screen and (max-width: 1024px){
+  .container{
+    padding: 0 1.5px;
+  }
+  .event-title{
+    margin: 10px;
+  }
+  .event-detail h3{
+    font-size: 20 px;
+  }
+  .event-detail p{
+    font-size: 18 px;
+  }
+} 
+
+@media screen and (max-width: 768px){
+  .burger-button{
+    display: block;
+  }  
+  h2{
+    color: #A60321;
+  }
+  h3 {
+    color: #A60321;
+    }
+    .header{
+      background-color:  #1C2526;
+      color: whitesmoke;
+      height: 70px;
+    }
+  body{
+    color: #590212;
+    background-color: #94E9F2;
+  }
+  .event{
+    background-color: #590212;
+  }
+  .footer{
+    color: white;
+    background-color: #1C2526;
+  }
+  .menu{
+    font-size: 0.5em; 
+    position: fixed;
+    background: #a60321de;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: -100vw;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+  }
+  .menu.is-active{
+    left: 0;
+  }
+  .header{
+    display: block;
+    height: auto;
+  }
+  .header ul {
+    display: initial;
+  }
+  .header ul li{
+    height: 50px;
+    justify-content: center;
+  }
+  .header{
+    height: 50px;
+    justify-content: center;
+  }
+  .header a{
+    justify-content: center;
+    height: 40 px;
+    font-size: 1.5em;
+    text-decoration: underline;
+    margin-bottom: .5px;
+  }
+  .header .logo{
+    text-align: right;
+  }
+  .event{
+    width: auto;
+    flex-shrink: initial;
+  }
+  .event img{
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 425px){
+  .event-detail h3{
+    font-size: 15px;
+  }
+  .event-detail p{
+    font-size: 13px;
+  }
+  .menu{
+    width: 90vw;
+  }
+  .event-detail a{
+    padding: 5px 40px;
+  }
+  .footer{
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+}
